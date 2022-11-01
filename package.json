@@ -1,0 +1,58 @@
+{
+    "name": "vue_modules",
+    "version": "1.0.1",
+    "private": true,
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build",
+        "beta": "vue-cli-service build --mode beta",
+        "lint": "vue-cli-service lint"
+    },
+    "dependencies": {
+        "@toast-ui/vue-grid": "^4.10.1",
+        "axios": "^0.19.2",
+        "core-js": "^3.6.4",
+        "csv-writer": "^1.6.0",
+        "jquery": "^3.4.1",
+        "js-cookie": "^2.2.1",
+        "moment": "^2.25.3",
+        "sha256": "^0.2.0",
+        "vue": "^2.6.11",
+        "vue-daum-postcode": "^0.8.0",
+        "vue-json-excel": "^0.2.98",
+        "vue-moment": "^4.1.0",
+        "vue-router": "^3.1.5",
+        "vue-sidebar-menu": "4.5.3",
+        "vue-time-picker": "^0.2.6",
+        "vuex": "^3.1.2",
+        "xlsx": "^0.15.6"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "~4.2.0",
+        "@vue/cli-plugin-eslint": "~4.2.0",
+        "@vue/cli-plugin-router": "^4.3.1",
+        "@vue/cli-service": "~4.2.0",
+        "babel-eslint": "^10.0.3",
+        "eslint": "^6.7.2",
+        "eslint-plugin-vue": "^6.1.2",
+        "vue-template-compiler": "^2.6.11"
+    },
+    "eslintConfig": {
+        "root": true,
+        "env": {
+            "node": true
+        },
+        "extends": [
+            "plugin:vue/essential",
+            "eslint:recommended"
+        ],
+        "parserOptions": {
+            "parser": "babel-eslint"
+        },
+        "rules": {}
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions"
+    ]
+}

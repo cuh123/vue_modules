@@ -1,0 +1,19 @@
+# Intellij
+*.iws
+*.iml
+*.ipr
+.idea/*
+.vscode/
+
+# STS
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+# Vue.js npm 파일
+node_modules/*
+dist/*
+package-lock.json

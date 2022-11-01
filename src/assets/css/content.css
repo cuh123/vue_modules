@@ -1,0 +1,1046 @@
+/* 헤더 */
+
+.layout_header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 250px;
+    height: 120px;
+    font-size: 0;
+    background: #2d2d33 url("../images/logo.png") no-repeat 50% 50%;
+    background-size: 120px auto;
+}
+
+.hd_info {
+    width: 100%;
+    height: 40px;
+    padding: 8px 30px 0 0;
+    background-color: #e0e2e5;
+    text-align: right;
+}
+
+.hd_info>div {
+    float: right;
+}
+
+.login_info {
+    padding-right: 20px;
+    font-size: 0.875em;
+    line-height: 1.75em;
+    cursor: pointer;
+}
+
+
+/* 왼쪽 메뉴 */
+
+.layout_leftMenu {
+    position: fixed;
+    left: 0;
+    top: 120px;
+    width: 250px;
+    height: calc(100% - 120px);
+    background-color: #2c3a52;
+}
+
+.leftMenu {
+    width: 100%;
+}
+
+
+/* 컨텐츠 */
+
+.layout_container {
+    width: calc(100% - 250px);
+    height: 100%;
+    min-height: calc(100vh - 40px);
+    margin-left: 250px;
+    padding-top: 40px;
+    background: #eee;
+}
+
+.contentWrap {
+    width:100%;
+    min-width:1500px;
+    height: 100%;
+    padding: 30px;
+}
+
+.ctTit {
+    display: inline-block;
+    font-size: 1.875em;
+}
+
+.ctPath {
+    display: inline-block;
+    padding-left: 20px;
+    color: #555;
+    font-size: 0.875em;
+}
+
+.ctPath>i {
+    display: inline-block;
+    font-size: 0.875em;
+}
+
+.ctPath>i:before {
+    display: inline-block;
+    content: "▶";
+    font-style: normal;
+    font-size: 0.2em;
+    text-align: center;
+    color: #555;
+    padding: 0 5px;
+}
+
+.content .srcBox {
+    position: relative;
+    margin: 20px 0 0;
+}
+
+.content .srcBox:before {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.content .srcBox .btn {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.ctBox {
+    position: relative;
+    width: 100%;
+    min-height: calc(100vh - 282px);
+    padding: 20px 30px 100px;
+    margin-top: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.ctBox.detail {
+    min-height: calc(100vh - 150px);
+    padding: 20px 30px 30px;
+}
+
+.ctBox.modify {
+    padding: 20px 30px 100px !important;
+}
+
+.ctBox.detail td>span+.btn {
+    margin-left: 20px;
+}
+
+.ctBox.modify td input,
+.ctBox.modify td select {
+    width: 20%;
+    border: 1px solid #ddd;
+}
+
+.ctBox_top {
+    position: relative;
+    width: 100%;
+}
+
+.ctBox_top .refer {
+    display: inline-block;
+    padding-left: 20px;
+    font-size: 0.7em;
+    font-weight: 400;
+}
+
+.ctTit_small {
+    font-size: 1.25em;
+    font-weight: 500;
+    line-height: 1.875em;
+}
+
+.ctBox h4.ctTit_small {
+    font-size: 1em;
+}
+
+.ctBox h4.ctTit_small:before {
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    content: "";
+    width: 5px;
+    height: 5px;
+    margin-right: 5px;
+    border-radius: 100%;
+    background-color: #3e61dc;
+}
+
+.ctBox .ctTit_small+.btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.ctBox .ctBox_btns {
+    padding-bottom: 10px;
+}
+
+.ctBox .ctBox_btns .btn {
+    margin-left: 5px;
+}
+
+.ctBox .ctBox_btns .btn:first-child {
+    margin-left: 0;
+}
+
+.ctBox .ctBox_btns .btn:nth-last-child(1),
+.ctBox .ctBox_btns .btn:nth-last-child(2) {
+    float: right;
+}
+
+.ctBox_top .btn_newReg {
+    position: absolute;
+    right: 120px;
+    top: 0;
+}
+
+.ctBox .tbl tr {
+    cursor: pointer;
+}
+
+.ctBox .tbl.viewType tr {
+    cursor: default;
+}
+
+.tbl.viewType tr:hover td {
+    background-color: #fff;
+}
+
+.srcBox {
+    position: relative;
+    padding: 10px 20px 15px;
+    border-radius: 5px;
+    background-color: #2c3a52;
+}
+
+.srcBox_list {
+    width: calc(100% - 120px);
+}
+
+.srcBox_list:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.srcBox_list li {
+    float: left;
+    width: 300px;
+    padding: 0 0 10px 15px;
+}
+
+.srcBox_list li:first-child {
+    padding-left: 0;
+}
+
+.srcBox_tit {
+    display: block;
+    padding-bottom: 5px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 2em;
+}
+
+.srcBox_opt {
+    width: 100%;
+}
+
+.srcBox_opt.dateType input.datepicker {
+    width: calc((100% / 2) - 10px);
+}
+
+.srcBox_opt .swung {
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.paging {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.paging {
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.paging * {
+    display: inline-block;
+}
+
+.paging a,
+.paging li {
+    width: 36px;
+    height: 36px;
+    border-radius: 3px;
+    line-height: 2.25em;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.paging a {
+    overflow: hidden;
+    border: 1px solid #ddd;
+    font-size: 1;
+    text-indent: -9999px;
+    background: url('../../assets/images/img_paging_arrow.png') no-repeat;
+}
+
+.paging .pagingFirst {
+    margin-right: 32px;
+    background-position: 0 0;
+}
+
+.paging .pagingLast {
+    margin-left: 32px;
+    background-position: -36px 0;
+}
+
+.paging li {
+    margin: 0 8px;
+}
+
+.paging .active,
+.paging li:hover {
+    color: #fff;
+    background-color: #3e61dc;
+}
+
+
+/* 버튼 */
+
+.btnArea {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.btnArea .btn {
+    margin: 0 5px;
+}
+
+.btn {
+    display: inline-block;
+    width: auto;
+    height: 30px;
+    padding: 0 15px;
+    /* 30px */
+    line-height: 2.15em;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    border: 0;
+    background-color: #3d4b64;
+    cursor: pointer;
+    /* 14px */
+    font-size: 0.875em;
+}
+
+.btn.btn_small {
+    height: 24px;
+    font-size: 0.75em;
+}
+
+.btn.btn_detail {
+    height: 40px;
+    line-height: 2.5em;
+    font-size: 1em;
+}
+
+.btn.btnIcon {
+    width: 110px;
+    height: 40px;
+    background-color: #3e61dc;
+    font-size: 1em;
+}
+
+.btn_xlsDown {
+    background-color: #1e7145;
+}
+
+.btn.btnReset {
+    margin-left: 0 !important;
+    background-color: #aaa;
+}
+
+.btnArea .btn.btnDel {
+    height: 40px;
+    font-size: 1em;
+    background-color: #aaaaaa;
+}
+
+.btnArea .btn.btnList {
+    float: left;
+    height: 40px;
+    margin-left: 0;
+    font-size: 1em;
+}
+
+.btnArea .btns_fr {
+    text-align: right;
+}
+
+.btnClose {
+    display: block;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    font-size: 0;
+    background: url("../../assets/images/bg_btn_close.png") no-repeat;
+    border: 0;
+    cursor: pointer;
+}
+
+.ico {
+    display: inline-block;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+.ico.iconSearch {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    background-image: url("../../assets/images/ico_btn_search.png");
+}
+
+
+/* 테이블 */
+
+.tbl {
+    table-layout: fixed;
+    width: 100%;
+    border-top: 1px solid #ddd;
+}
+
+.tbl thead th,
+.tbl.viewType tbody th {
+    height: 60px;
+    font-weight: 500;
+    color: #4e5d75;
+    background-color: #f4f5f6;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+.tbl thead th:last-child,
+.tbl.viewType tbody th:last-child {
+    border-right: 0;
+}
+
+.tbl tbody tr td {
+    height: 60px;
+    padding: 0 10px;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    line-height: 1.25em;
+}
+
+.tbl tbody tr:hover td {
+    background-color: rgba(62, 97, 220, 0.1);
+}
+
+.tbl.viewType tbody th {
+    padding: 0 20px;
+    text-align: left;
+}
+
+.tbl.viewType tbody td {
+    padding: 0 20px;
+    text-align: left;
+}
+
+table td .refer {
+    padding-left: 10px;
+    font-size: 0.875em;
+}
+
+table td .click {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.tbl tbody tr.alert td {
+    background-color: rgba(255, 55, 55, 0.1);
+    color: #ef3e3e;
+}
+
+.tbl tbody tr.alert td .click {
+    color: #ef3e3e;
+}
+
+.none_hover tr:hover {
+    cursor: default;
+}
+
+
+/* 팝업 */
+
+.pop_wrap {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+}
+
+.pop_wrap .pop_inner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 800px;
+    transform: translateY(-50%);
+    margin-left: -400px;
+    border-radius: 5px;
+}
+
+.pop_wrap h1.pop_tit {
+    width: 100%;
+    height: 50px;
+    padding-left: 30px;
+    line-height: 3.125em;
+    background-color: #2c3a52;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.pop_wrap .pop_content {
+    width: 100%;
+    max-height: 650px;
+    overflow: auto;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.pop_content .info_txt {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd
+}
+
+.pop_content .info_txt li {
+    padding-bottom: 5px;
+}
+
+.pop_content .ctBox_top .ctTit_small {
+    /* margin-bottom: -15px; */
+    font-size: 1em;
+}
+
+.pop_content table {
+    width: 100%;
+    /* margin-top: 15px; */
+}
+
+.pop_content table th {
+    padding: 20px 0 0 20px;
+    vertical-align: top;
+    font-weight: 500;
+    text-align: left;
+}
+
+.pop_content table.tbl th {
+    height: 40px;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.pop_content table.viewType th {
+    padding: 20px 0 0;
+    text-align: center;
+}
+
+.pop_content table td {
+    padding: 10px 20px;
+    font-size: 0.875em;
+}
+
+.pop_content table td input[type="text"],
+.pop_content table td input[type="password"],
+.pop_content table td select {
+    width: calc(100% - 145px);
+    border: 1px solid #ddd;
+}
+
+.pop_content .btn.middle {
+    width: 130px;
+    height: 40px;
+    margin-left: 15px;
+    vertical-align: top;
+}
+
+.pop_content table td .refer {
+    display: block;
+    font-size: 0.875em;
+    line-height: 1.8em;
+    height: 10px;
+}
+
+.pop_wrap .btnClose {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.pop_form ul.srcBox_opt li {
+    height: 40px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+}
+
+.pop_form ul.srcBox_opt li:last-child {
+    margin-bottom: 0px;
+}
+
+.pop_form .pop_content table td label>input {
+    width: 40%;
+    margin-left: 5px;
+}
+
+.pop_btns {
+    padding-top: 30px;
+    margin-top: 10px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+.pop_btns .btn {
+    height: 40px;
+    font-size: 0.875em;
+    margin: 0 5px;
+}
+
+.pop_wrap .pop_content table td .btn_detail {
+    margin-left: 5px;
+    vertical-align: top;
+    line-height: 3em;
+}
+
+.pop_alert .pop_content .info_txt {
+    line-height: 1.6em;
+    border-bottom: 0;
+}
+
+
+/* login */
+
+.loginWrap {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: rgba(44, 58, 82, 0.7) url("../images/bg_login.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.loginBox {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 460px;
+    transform: translateY(-65%);
+    margin-left: -230px;
+}
+
+.loginBox h2 {
+    width: 50%;
+    height: 120px;
+    margin: 0 auto 50px;
+    background: url("../images/logo.png") no-repeat;
+    background-size: contain;
+    font-size: 0;
+}
+
+.loginBox td {
+    vertical-align: middle;
+}
+
+.login_tit {
+    padding-right: 25px;
+    text-align: right;
+    color: #c4c4cf;
+}
+
+.login_inp {
+    padding: 5px 0;
+}
+
+.login_inp input {
+    background-color: #2d2d33;
+    color: #fff;
+    vertical-align: middle;
+}
+
+.login_btn {
+    padding-left: 15px;
+}
+
+.login_btn input {
+    width: 115px;
+    height: 90px;
+    padding: 0;
+    background-color: #3e61dc;
+    border-radius: 5px;
+    color: #fff;
+    vertical-align: middle;
+}
+
+.login_txt {
+    padding: 20px 0;
+    font-size: 0.875em;
+    color: #c4c4c4;
+    text-align: center;
+    line-height: 1.5em
+}
+
+
+/* 세탁관리 */
+
+.laundry .srcBox_list li,
+.coupon .srcBox_list li {
+    width: 250px;
+}
+
+.srcBox_list li.colspan {
+    width: 500px;
+}
+
+.laundry .ctBox {
+    min-height: calc(100vh - 369px);
+}
+
+.ctBox.modify td .inp_laundrlaundry_csMemo {
+    width: calc(100% - 70px);
+    margin-right: 10px;
+}
+
+.ctBox.modify td .inp_laundrlaundry_csMemo+.btn {
+    vertical-align: top;
+    margin-left: 0;
+}
+
+.laundry .laudry_csMemo>p {
+    width: 98%;
+    position: relative;
+    line-height: 1.75em;
+    padding: 5px 0;
+}
+
+.laundry .laudry_csMemo>p>span:after {
+    display: inline-block;
+    content: "|";
+    position: relative;
+    top: -2px;
+    font-size: 0.75em;
+    margin: 0 10px;
+    color: #ddd;
+}
+
+.laundry .laudry_csMemo>p>span:nth-child(3):after {
+    display: none;
+}
+
+.laundry .laudry_csMemo>p>span:nth-child(3) {
+    padding-right: 66px;
+    word-break: break-all;
+}
+
+.laundry .laudry_csMemo>p .btn_memoDel {
+    position: absolute;
+    right: -40px;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background-color: #ef3e3e;
+    background-position: 50% 50%;
+    font-size: 0;
+}
+
+.laudry_status.pop_wrap .pop_inner {
+    width: 600px;
+    margin-left: -300px;
+}
+
+.laudry_status.pop_wrap .tbl {
+    margin-top: 0;
+}
+
+.laudry_status.pop_wrap .tbl td {
+    padding: 0 30px;
+}
+
+.laudry_csMemo.pop_wrap .pop_inner {
+    width: 600px;
+    margin-left: -300px;
+}
+
+.laudry_csMemo.pop_wrap .pop_ct_inner {
+    overflow: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    min-height: 100px;
+    max-height: 300px;
+}
+
+.laudry_csMemo.pop_wrap .pop_ct_inner>p {
+    line-height: 2em;
+}
+
+.laudry_csMemo.pop_wrap .pop_ct_inner>p>span:after {
+    display: inline-block;
+    content: "|";
+    position: relative;
+    top: -2px;
+    font-size: 0.75em;
+    margin: 0 10px;
+    color: #ddd;
+}
+
+.laudry_csMemo.pop_wrap .pop_ct_inner>p>span:nth-child(3):after {
+    display: none;
+}
+
+.laudry_csMemo.pop_wrap .pop_ct_inner>p>span:nth-child(3) {
+    word-break: break-all;
+}
+
+
+/* 배차관리 */
+
+.layout_container.newTab {
+    width: 100%;
+    margin-left: 0;
+    padding-top: 0;
+}
+
+.vehicle_newSchedule .srcBox_opt.dateType input.datepicker {
+    width: 100%;
+}
+
+.vehicle_newSchedule .ctBox.detail {
+    min-height: calc(100vh - 266px);
+}
+
+.vehicle_newSchedule p.refer {
+    padding-top: 10px;
+    font-size: 0.875em;
+}
+
+.vehicle_newSchedule .srcBox_opt label {
+    line-height: 40px;
+    color: #fff;
+    padding-right: 10px;
+}
+
+.vehicle_newSchedule .srcBox_opt label>input {
+    position: relative;
+    top: -2px;
+}
+
+.newTab .vehicle_assign .ctBox.detail {
+    min-height: calc(100vh - 110px);
+}
+
+.vehicle_assign .ctBox.detail ul li {
+    font-size: 0.875em;
+}
+
+.vehicle_assign .ctBox.detail ul li .srcBox_opt {
+    display: inline-block;
+    width: 20%;
+    height: 40px;
+}
+
+.vehicle_assign .ctBox.detail ul li .srcBox_opt select {
+    width: calc(100% - 150px);
+    height: 30px;
+    margin: 0 5px 0 10px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+}
+
+.vehicle_assign .ctBox.detail ul li .srcBox_opt select+.btn {
+    height: 30px;
+    padding: 0 10px;
+    vertical-align: top;
+}
+
+
+/* 고객문의 */
+
+.txt_replyBox {
+    padding: 20px 0;
+    line-height: 1.25em;
+}
+
+.customer .tbl.viewType tbody td span {
+    display: block;
+    padding: 5px 0;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* 공지사항 */
+
+.notice .txt_replyBox {
+    overflow: auto;
+    padding: 20px;
+    height: 563px;
+}
+
+.notice .tbl.viewType tbody td textarea {
+    min-height: 503px
+}
+
+.notice .ctBox.modify td input {
+   width: 100%;
+}
+
+.notice .tbl.viewType tbody tr:last-child td {
+    padding: 0;
+}
+
+.notice .detail.modify .tbl.viewType tbody tr:last-child td {
+    padding: 0 20px;
+}
+
+
+/* 카트관리 */
+
+.cart .cart_status td>p {
+    display: inline-block;
+}
+
+.cart .cart_status td>p:first-child:after {
+    display: inline-block;
+    content: "|";
+    position: relative;
+    top: -2px;
+    font-size: 0.875em;
+    color: #999;
+    margin: 0 10px;
+}
+
+.cart .ctBox.modify td input[type="text"],
+.cart .ctBox.modify td select,
+.vehicle_manager .ctBox.modify td input[type="text"],
+.vehicle_manager .ctBox.modify td select {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.cart .ctBox.modify td input[type="text"],
+.vehicle_manager .ctBox.modify td input[type="text"] {
+    text-align: center
+}
+
+.cart tr:hover,
+.vehicle_manager tr:hover,
+.schedule tr:hover {
+    cursor: default;
+}
+
+
+/* 예외 스케줄 관리 */
+
+.schedule td .btn {
+    margin: 0 5px;
+}
+
+.pop_wrap.schedule_newReg .pop_inner {
+    width: 1200px;
+    margin-left: -600px;
+}
+
+.pop_wrap.schedule_newReg .srcBox {
+    padding-bottom: 10px;
+}
+
+.pop_wrap.schedule_newReg .srcBox label {
+    color: #fff;
+    padding-right: 20px;
+}
+
+.pop_wrap.schedule_newReg .srcBox .btn {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.pop_wrap.schedule_newReg .srcBox .srcBox_tit {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.pop_wrap.schedule_newReg .srcBox input[type="text"] {
+    width: 150px;
+    margin-right: 50px;
+}
+
+.pop_wrap.schedule_newReg .srcBox input[type="radio"] {
+    margin: 0;
+}
+
+.pop_wrap.schedule_newReg .srcBox .srcBox_opt {
+    display: inline-block;
+    width: 300px;
+}
+
+.pop_wrap.schedule_newReg .srcBox+.ctBox_top {
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+.pop_wrap.schedule_newReg .pop_content .ctBox_top .ctTit_small .refer {
+    font-size: 0.875em;
+}
+
+.pop_wrap.schedule_newReg .pop_content .ctBox_top .ctTit_small+.refer {
+    display: block;
+    font-size: 0.875em;
+    padding-left: 0;
+}
+
+.pop_wrap.schedule_newReg .pop_content td select {
+    width: 90%;
+}
+
+.pop_wrap.schedule_newReg .pop_content td.bgClr {
+    background-color: rgba(255, 230, 153, 0.5);
+}
+
+.sel td {
+    background-color: rgba(62, 97, 220, 0.1);
+}
